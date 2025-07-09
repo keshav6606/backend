@@ -12,7 +12,7 @@ class Telegram:
     PORT = int(getenv("PORT", "8000"))
     BASE_URL = getenv("BASE_URL", "0.0.0.0").rstrip('/')
     AUTH_CHANNEL = [channel.strip() for channel in (getenv("AUTH_CHANNEL") or "").split(",") if channel.strip()]
-    DATABASE = getenv("DATABASE", "mongodb+srv://cinemahub940:cinemahub940@cluster0.hmz84fc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").split(", ")
+    DATABASE = getenv("DATABASE", "mongodb+srv://cinemahub:F7Pw4KMgkQa3Mx2r@cluster0.wycanos.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").split(", ")
     TMDB_API = getenv("TMDB_API", "6abcb6bb99fb77f33c37016a28866ed2")
     IMDB_API = getenv("IMDB_API", "6abcb6bb99fb77f33c37016a28866ed2")
     UPSTREAM_REPO = getenv("UPSTREAM_REPO", "")
