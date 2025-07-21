@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from Backend import LOGGER
 
 
-load_dotenv(path.join(path.dirname(path.dirname(__file__)), "config.env"))
+load_dotenv(path.join(path.dirname(path.dirname(__file__)), "sample_config.env"))
 class Telegram:
     API_ID = int(getenv("API_ID", "26954495"))
     API_HASH = getenv("API_HASH", "2061c55207cfee4f106ff0dc331fe3d9")
