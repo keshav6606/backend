@@ -17,7 +17,7 @@ class Telegram:
     IMDB_API = getenv("IMDB_API", "6abcb6bb99fb77f33c37016a28866ed2")
     UPSTREAM_REPO = getenv("UPSTREAM_REPO", "")
     UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
-    MULTI_CLIENT = getenv("MULTI_CLIENT", "False").lower() == "true"
+    MULTI_CLIENT = getenv("MULTI_CLIENT", "true").lower() == "true"
     USE_CAPTION = getenv("USE_CAPTION", "False").lower() == "true"
     USE_TMDB = getenv("USE_TMDB", "False").lower() == "true"
     OWNER_ID = int(getenv("OWNER_ID", "7045947967"))
