@@ -6,9 +6,9 @@ from Backend import LOGGER
 
 load_dotenv(path.join(path.dirname(path.dirname(__file__)), "config.env"))
 class Telegram:
-    API_ID = int(getenv("API_ID", "0"))
-    API_HASH = getenv("API_HASH", "")
-    BOT_TOKEN = getenv("BOT_TOKEN", "")
+    API_ID = int(getenv("API_ID", "26954495"))
+    API_HASH = getenv("API_HASH", "2061c55207cfee4f106ff0dc331fe3d9")
+    BOT_TOKEN = getenv("BOT_TOKEN", "7594581650:AAE5IIr5Yw8QhCUqe9B3dYgSzLqhDwzJMGU")
     PORT = int(getenv("PORT", "8000"))
     BASE_URL = getenv("BASE_URL", "0.0.0.0").rstrip('/')
     AUTH_CHANNEL = [channel.strip() for channel in (getenv("AUTH_CHANNEL") or "").split(",") if channel.strip()]
