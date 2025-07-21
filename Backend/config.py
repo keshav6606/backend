@@ -21,4 +21,4 @@ class Telegram:
     USE_CAPTION = getenv("USE_CAPTION", "False").lower() == "true"
     USE_TMDB = getenv("USE_TMDB", "False").lower() == "true"
     OWNER_ID = int(getenv("OWNER_ID", "7045947967"))
-    USE_DEFAULT_ID = getenv("USE_DEFAULT_ID", None)
+    USE_DEFAULT_ID = getenv("6285713858", None)
