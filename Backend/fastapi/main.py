@@ -40,7 +40,7 @@ app.add_middleware(
 
 
 
-@app.get("/", response_model=Dict[str, Any])
+@app.get("/api/", response_model=Dict[str, Any])
 async def get_bot_workloads():
     """
     Home route to list each bot's workload and total number of bots.
