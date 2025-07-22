@@ -116,7 +116,7 @@ async def get_sorted_tv_shows(
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
 
-@app.get("/api/movies", response_model=dict)
+@app.get("api/movies", response_model=dict)
 async def get_sorted_movies(
     sort_by: List[str] = Query(default=["rating:desc"], description="List of fields to sort by. Format: field:direction"),
     page: int = Query(default=1, ge=1, description="Page number to return"),
